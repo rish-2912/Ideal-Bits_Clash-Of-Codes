@@ -1,4 +1,4 @@
-import UserABI from ''
+// import UserABI from ''
 import { ContractAddress } from './config.js'
 import {ethers} from 'ethers'
 import {useState,useRef,useEffect} from 'react'
