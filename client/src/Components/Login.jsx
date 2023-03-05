@@ -1,13 +1,13 @@
 import {useState,useRef,useEffect} from 'react'
 import {useForm} from 'react-hook-form'
 import {useNavigate,useLocation} from 'react-router-dom'
-// import UserABI from ''
-import { ContractAddress } from './config.js'
+import UserABI from '../../../smart_contract/build/contracts/Voters.json'
+import { ContractAddress } from '../config.js'
 import {ethers} from 'ethers'
 import AuthConsumer from '../auth/useAuth'
 import "./otp.css"
 import OtpInput from "react18-input-otp"
-import { verify2Fa } from './2fa/authenticate'
+import { verify2Fa } from '../2fa/authenticate'
 import {generatePassword} from './pass.js'
 import { Oval } from 'react-loader-spinner'
 

@@ -1,7 +1,7 @@
 import {create} from 'ipfs-http-client'
 import {Buffer} from 'buffer'
 
-const auth = 'Basic ' + Buffer.from(import.meta.env.VITE_PROJECT_ID + ':' + import.meta.env.VITE_API_KEY_SECRET).toString('base64')
+const auth = 'Basic ' + Buffer.from("2MZ75Kli9GbOCprmpteEs0ZejO9" + ':' + "7dd9ace6a556c33573363ce0892c5b56").toString('base64')
 const ipfsClient=async()=>{
     
     const ipfs = await create(

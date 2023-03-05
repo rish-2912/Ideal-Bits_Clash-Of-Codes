@@ -1,13 +1,13 @@
-// import UserABI from ''
-import { ContractAddress } from './config.js'
+import UserABI from '../../../smart_contract/build/contracts/Voters.json'
+import { ContractAddress } from '../config.js'
 import {ethers} from 'ethers'
 import {useState,useRef,useEffect} from 'react'
 import {useForm} from 'react-hook-form'
 import {generatePassword} from './pass.js'
 import {useNavigate} from 'react-router-dom'
-import { saveText } from './ipfs/infura'
-import { AESEncrypt } from './ipfs/crypt'
-import { auth2fa,verify2Fa } from './2fa/authenticate'
+import { saveText } from '../ipfs/infura'
+import { AESEncrypt } from '../ipfs/crypt'
+import {auth2fa,verify2Fa} from '../2fa/authenticate'
 import OtpInput from "react18-input-otp"
 import { Oval } from 'react-loader-spinner'
 import "./otp.css"
